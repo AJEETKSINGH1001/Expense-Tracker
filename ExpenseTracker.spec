@@ -1,13 +1,15 @@
 # -*- mode: python ; coding: utf-8 -*-
 
 
+block_cipher = None
+
 a = Analysis(
     ['ExpenseTracker.py'],
     pathex=[],
     binaries=[],
     datas=[],
     hiddenimports=[],
-    hookspath=['./hooks'],
+    hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
     excludes=[],
@@ -35,5 +37,4 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['Exp.ico'],
 )
